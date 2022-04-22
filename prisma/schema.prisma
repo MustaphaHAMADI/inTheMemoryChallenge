@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model sales {
+  date                DateTime? @db.Timestamp(6)
+  order_id            String?
+  customer_id         BigInt?
+  country             String?
+  product_code        String?
+  product_description String?
+  quantity            BigInt?
+  unit_price          Float?
+  id                  BigInt    @id @default(autoincrement())
+}
