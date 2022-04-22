@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Card from '../components/Card'
 import Header from '../components/Header'
 import Select from '../components/Select'
 import BarChart from '../components/BarChart'
+import { API_URL } from '../next.config'
 
 const Home = () => {
   const [data, setData] = useState()
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/country/country/world')
+      .get(`${API_URL}/api/country/country/world`)
       .then((res) => setData(res.data))
   }, [])
 

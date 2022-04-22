@@ -1,28 +1,23 @@
 import axios from 'axios'
 import { useState, useEffect, useRef } from 'react'
+import { API_URL } from '../next.config'
 
 const Select = ({ handleDataChange }) => {
   const [selectData, setSelectData] = useState()
   const selectRef = useRef()
 
   useEffect(() => {
-    axios
-      .get('http://localhost:3000/api/country')
-      .then((res) => setSelectData(res.data))
+    axios.get(`${API_URL}/api/country`).then((res) => setSelectData(res.data))
   }, [])
 
   const handleChange = async (e) => {
     const select = selectRef.current.value
     e.preventDefault()
     if (select === 'all') {
-      const { data } = await axios.get(
-        'http://localhost:3000/api/country/country/world'
-      )
+      const { data } = await axios.get(`${API_URL}/api/country/country/world`)
       handleDataChange(data)
     } else {
-      const { data } = await axios.get(
-        `http://localhost:3000/api/country/${select}`
-      )
+      const { data } = await axios.get(`${API_URL}/api/country/${select}`)
       handleDataChange(data)
     }
   }
