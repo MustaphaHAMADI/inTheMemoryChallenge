@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 64152df733243b2da32959c17652abb8adc8886f Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650626401 +0200	branch: Created from HEAD
+64152df733243b2da32959c17652abb8adc8886f 787bccdc5a3d6183682649069aff572095744c3a Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650626634 +0200	commit: added prisma and setup db on supabase
+787bccdc5a3d6183682649069aff572095744c3a 22431eeba8ce60be1c0ffb7d731c9a0d00c4d571 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650627042 +0200	commit: added first route get all countries and axios chartjs deps
+22431eeba8ce60be1c0ffb7d731c9a0d00c4d571 f9ab962c901179e50a06ccf0b407fb9b693cece8 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650628669 +0200	commit: added working route to get world data and added date-fns for date formating
+f9ab962c901179e50a06ccf0b407fb9b693cece8 7d8dd161437d2abe249bb2dd5dfd47ced29a9788 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650628820 +0200	commit: added api route for specific country
+7d8dd161437d2abe249bb2dd5dfd47ced29a9788 ae5f4c669cae5b5f1326507f4a46bf254e0b47a7 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650629408 +0200	commit: create main components
+ae5f4c669cae5b5f1326507f4a46bf254e0b47a7 f21390019b715395da25d15010ca6aaa4ce0dbe6 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650631802 +0200	commit: create card component
+f21390019b715395da25d15010ca6aaa4ce0dbe6 3249101224f098ed0452afaf9f3fa762c50e386b Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650633407 +0200	commit: basic styling done for desktop
+3249101224f098ed0452afaf9f3fa762c50e386b 3fb968f715995a466bda96a460115db14c6dcea9 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650635334 +0200	commit: responsive done
+3fb968f715995a466bda96a460115db14c6dcea9 666df8d69b75eb822b5d7755e03e88fb4cf90c83 Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650635637 +0200	commit: taking a break
+666df8d69b75eb822b5d7755e03e88fb4cf90c83 572f36de3ebb31b38c843fd7abd5a0d2e977fa4d Mustapha HAMADI <hamadi.mustapha7@gmail.com> 1650637451 +0200	commit: resume work
