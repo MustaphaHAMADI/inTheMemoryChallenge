@@ -21,6 +21,15 @@ const BarChart = ({ sales }) => {
   )
   if (sales) {
     const labels = sales[0].map((sale) => sale.month)
+    const options = {
+      maintainAspectRatio: false,
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      },
+    }
 
     const data = {
       labels,
@@ -34,8 +43,8 @@ const BarChart = ({ sales }) => {
     }
 
     return (
-      <div className=" mt-8 flex w-full ">
-        <Bar data={data} />
+      <div className=" mt-8 h-56 w-full  lg:flex lg:min-h-full">
+        <Bar options={options} data={data} />
       </div>
     )
   } else {

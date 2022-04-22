@@ -20,7 +20,7 @@ const Home = () => {
     setData(value)
   }
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center font-sans ">
+    <div className="flex min-h-screen flex-col items-center justify-center font-sans md:overflow-x-hidden ">
       <Head>
         <title>In the Memory dashboard</title>
         <link rel="icon" href="/favicon.ico" />
@@ -34,7 +34,7 @@ const Home = () => {
         </h2>
         <Select handleDataChange={handleDataChange} />
         {data && (
-          <div className="mt-4 flex justify-between gap-3">
+          <div className="mt-4 flex flex-col justify-between gap-3 lg:flex-row">
             <Card
               title="Total revenue"
               color="green"
@@ -54,12 +54,11 @@ const Home = () => {
       <footer className="flex h-24 w-full items-center justify-center border-t bg-gray-200">
         <a
           className="flex items-center justify-center gap-2 "
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/MustaphaHAMADI"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          Made by Mustapha HAMADI
         </a>
       </footer>
     </div>
